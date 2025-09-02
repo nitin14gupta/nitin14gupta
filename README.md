@@ -14,4 +14,7 @@
 ---
 [![](https://visitcount.itsvg.in/api?id=nitin14gupta&icon=0&color=0)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+
+<p align="center">
+ <img width="1000" src="assets/github-snake.svg" alt="snake"/>
+</p>
