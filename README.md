@@ -179,8 +179,3 @@ const nitin = {
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:24243e,50:302b63,100:0f0c29" alt="footer" />
 </p>
-
-<p align="center">
-  <img width="1000" src="github-snake.svg" alt="snake"/>
-</p>
-
