@@ -1,0 +1,47 @@
+name: Generate Word Cloud
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: |
+      startsWith(github.event.issue.title, 'wordcloud|add|') ||
+      startsWith(github.event.issue.title, 'wordcloud|shuffle')
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install wordcloud matplotlib pillow
+
+      - name: Run word cloud generator
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python wordcloud/generate.py
+
+      - name: Commit and push updated cloud
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add wordcloud/
+          git commit -m "🌩️ Update word cloud [skip ci]" || echo "No changes"
+          git push
+
+      - name: Close the issue
+        uses: peter-evans/close-issue@v3
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          comment: |
+            ✅ Thanks for contributing! Your word has been added to the cloud.
+            [Check it out on my profile!](https://github.com/nitin14gupta)
