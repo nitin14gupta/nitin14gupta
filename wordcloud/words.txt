@@ -1,0 +1,8 @@
+TypeScript
+React
+Next.js
+Tailwind
+Figma
+JavaScript
+Node.js
+Vercel
