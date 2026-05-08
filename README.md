@@ -105,25 +105,25 @@ const nitin = {
 
 ---
 
-## 🎧 Listening Right Now
+## 🌩️ Community Word Cloud
 
-<p align="center">
-  <a href="https://open.spotify.com">
-    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=YOUR_SPOTIFY_UID&cover_image=true&theme=novatorem&show_offline=true&background_color=121212&interchange=false" alt="Spotify Now Playing" width="350" />
-  </a>
-</p>
+![Words Added](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/nitin14gupta/nitin14gupta/master/wordcloud/metadata.json&query=$.total_words&label=Words%20Added&color=86A8E7&labelColor=0f0c29&style=flat-square)
+![Word Clouds Created](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/nitin14gupta/nitin14gupta/master/wordcloud/metadata.json&query=$.clouds_created&label=Clouds%20Created&color=7F7FD5&labelColor=0f0c29&style=flat-square)
+![Participants](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/nitin14gupta/nitin14gupta/master/wordcloud/metadata.json&query=$.participants&label=Participants&color=91EAE4&labelColor=0f0c29&style=flat-square)
 
-> ⚙️ *Setup: [Connect your Spotify](https://github.com/kittinan/spotify-github-profile) and replace `YOUR_SPOTIFY_UID` above.*
+### 💬 [Drop a word](https://github.com/nitin14gupta/nitin14gupta/issues/new?template=addword.md&title=wordcloud%7Cadd%7C%3CINSERT-WORD%3E) → watch the cloud rebuild live 🚀
 
----
+The word cloud auto-regenerates every time someone [adds a word](https://github.com/nitin14gupta/nitin14gupta/issues/new?template=addword.md&title=wordcloud%7Cadd%7C%3CINSERT-WORD%3E) via GitHub Issues. No code needed — just open an issue.
 
-## ⏱️ Weekly Coding Time
+⭐ Don't like the current layout? [Reshuffle it](https://github.com/nitin14gupta/nitin14gupta/issues/new?template=shufflecloud.md&title=wordcloud%7Cshuffle) 🎲
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=nitin14gupta&theme=midnight-purple&hide_border=true&layout=compact&langs_count=7" alt="WakaTime Stats" />
-</p>
+<div align="center">
 
-> ⚙️ *Setup: [Create a WakaTime account](https://wakatime.com) → install the editor plugin → username matches.*
+### What's one piece of tech you can't live without? 🛠️
+
+<img src="https://raw.githubusercontent.com/nitin14gupta/nitin14gupta/master/wordcloud/wordcloud.png" alt="WordCloud" width="100%" />
+
+</div>
 
 ---
 
